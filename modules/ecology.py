@@ -40,7 +40,7 @@ def render(lang="中文"):
     They exist in symbiosis with termites, growing on “fungus combs” built by termite colonies. Their survival depends on a complex mix of microbes, temperature, humidity, and soil — a perfect example of ecological cooperation.
     """)
 
-    show_image_local("assets/images/shengtai.png", width=500)
+    st.image("https://raw.githubusercontent.com/lightrainofmay/jizong_web/main/assets/images/shengtai.PNG", width=350)
     st.markdown("---")
 
     st.subheader("🧺 保护性采摘方法" if lang == "中文" else "🧺 Sustainable Harvesting Techniques")
