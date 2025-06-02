@@ -56,9 +56,9 @@ def render(lang="中文"):
 - Use breathable containers like bamboo baskets  
     """)
 
-    show_image_local("assets/images/baohu1.png", width=350)
-    show_image_local("assets/images/baohu2.png", width=350)
-    show_image_local("assets/images/baohu3.png", width=350)
+    st.image("https://raw.githubusercontent.com/lightrainofmay/jizong_web/main/assets/images/baohu1.PNG", width=350)
+    st.image("https://raw.githubusercontent.com/lightrainofmay/jizong_web/main/assets/images/baohu2.PNG", width=350)
+    st.image("https://raw.githubusercontent.com/lightrainofmay/jizong_web/main/assets/images/baohu3.PNG", width=350)
 
     st.markdown("---")
     st.subheader("🎮 模拟鸡枞采摘" if lang == "中文" else "🎮 Simulated Jizong Harvest")
