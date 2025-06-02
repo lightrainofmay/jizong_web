@@ -1,5 +1,3 @@
-# app.py
-
 import streamlit as st
 from config import LANGUAGES, MENU
 from modules import identify, cooking, culture, ecology, community, mushroom_info  # ✅ 新增模块
@@ -38,7 +36,7 @@ else:
         if lang == "中文":
             st.title("🐔🍄 鸡枞大冒险：一起识菌、采菌、做美食！")
 
-            st.image("assets/images/home_cover.png", width=400)
+            st.image("https://raw.githubusercontent.com/lightrainofmay/jizong_web/refs/heads/main/assets/images/home_cover.PNG", width=400)
 
             st.markdown("欢迎来到课程主页！请选择左侧菜单浏览各模块内容。")
 
@@ -46,14 +44,14 @@ else:
 
             st.markdown("""
             <div style='font-size:14px; color: #555; line-height: 1.6;'>
-                <strong>制作者：</strong> 杨晓萱、张可欣、杨雨诺<br>
+                <strong>制作者：</strong> 杨晓萱、XXX、XXX<br>
                 <strong>指导教师：</strong> 周晓宇
             </div>
             """, unsafe_allow_html=True)
         else:
             st.title("🐔🍄 JiZong Quest: Learn, Pick and Cook Mushrooms!")
 
-            st.image("assets/images/home_cover.png", width=400)
+            st.image("https://raw.githubusercontent.com/lightrainofmay/jizong_web/refs/heads/main/assets/images/home_cover.PNG", width=400)
 
             st.markdown("Welcome to the homepage! Please use the menu on the left to explore each module.")
 
@@ -61,10 +59,11 @@ else:
 
             st.markdown("""
             <div style='font-size:14px; color: #555; line-height: 1.6;'>
-                <strong>Created by:</strong> Yang Xiaoxuan, Zhang Kexin, Yang Yunu<br>
+                <strong>Created by:</strong> Yang Xiaoxuan, XXX, XXX<br>
                 <strong>Instructor:</strong> Zhou Xiaoyu
             </div>
             """, unsafe_allow_html=True)
+
     with col2:
         st.markdown("""
         <div style='text-align: right; line-height: 1.2;'>

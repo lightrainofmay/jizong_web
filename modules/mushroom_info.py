@@ -34,7 +34,7 @@ Mushrooms are the fruiting bodies of certain fungi, classified under the kingdom
         image_path = "assets/images/mushroom_structure_en.PNG"
 
     if os.path.exists(image_path):
-        st.image(image_path, use_column_width=False, width=500)
+        st.image(image_path, width=500)
     else:
         st.warning("❗ 蘑菇结构图未找到")
 
