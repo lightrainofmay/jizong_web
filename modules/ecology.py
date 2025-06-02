@@ -120,6 +120,6 @@ Ecological Chain: **Forest → Termite → Nest → Jizong → Human**
 Preserving Jizong means sustaining the entire ecosystem.
     """)
 
-    show_image_local("assets/images/shengtai5.PNG", width=500)
+    st.image("https://raw.githubusercontent.com/lightrainofmay/jizong_web/main/assets/images/shengtai5.PNG", width=500)
 
     st.info("🍄 鸡枞的保护，关系整个生态系统的稳定！" if lang == "中文" else "🍄 Protecting Jizong keeps the ecosystem in balance!")
