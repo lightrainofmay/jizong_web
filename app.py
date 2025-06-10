@@ -29,7 +29,7 @@ elif selected_page == "community":
     community.render(lang)
 elif selected_page == "mushroom_info":  # ✅ 新增导航逻辑
     mushroom_info.render(lang)
-elif selected_page == "video":
+elif selected_page == "video":  # ✅ 新增导航逻辑
     video.render(lang)
 else:
     col1, col2 = st.columns([3, 1])
