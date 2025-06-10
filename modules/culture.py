@@ -7,6 +7,12 @@ def show_image_local(path, caption=None, width=300):
     else:
         st.warning(f"⚠️ 图像未找到: {path}")
 
+def show_video_local(path):
+    if os.path.exists(path):
+        st.video(path)
+    else:
+        st.warning(f"⚠️ 视频未找到: {path}")
+
 def render(lang="中文"):
     st.title("🎎 非遗文化与故事" if lang == "中文" else "🎎 Intangible Heritage & Stories")
     st.markdown("---")
@@ -27,13 +33,18 @@ def render(lang="中文"):
 > 海上天风吹玉芝，樵童睡熟不曾知。  
 > 仙翁住近华阳洞，分得琼英一两枝。  
 > ——杨升庵（杨慎）
+        """)
+        show_video_local("assets/audio/shi1_ch.mp4")
 
+        st.markdown("""
 > 至味常无种，轮菌雪作肤。  
 > 茎从新雨茁，香自晚春腴。  
 > 鲜嫩头番秀，肥抽九节蒲。  
 > 秋风菁菜客，食品列兹无。  
 > ——清·贾杰《鸡枞》
         """)
+        show_video_local("assets/audio/shi2_ch.mp4")
+
         show_image_local("assets/images/yangshen.jpg", caption="杨慎画像（图片来自维基百科）")
 
         st.markdown("这些诗句展示了鸡枞在中国传统文化中的独特地位。")
@@ -53,14 +64,19 @@ Jizong is not only a culinary treasure but also a poetic symbol in Chinese liter
 > The immortal near Huayang Cave  
 > Shares a branch of celestial essence.*  
 > —Yang Shen, Ming Dynasty
+        """)
+        show_video_local("assets/audio/shi1_en.mp4")
 
+        st.markdown("""
 > *No need to sow this rarest taste,  
 > Its snow-white cap a gift of spring.  
 > It buds with rain, aromas rich,  
 > And feeds the honored guest in fall.*  
 > —Jia Jie, Qing Dynasty
         """)
-        show_image_local("assets/images/yangshen.jpg", caption="Portrait of Yang Shen（From Wikipeida）")
+        show_video_local("assets/audio/shi2_en.mp4")
+
+        show_image_local("assets/images/yangshen.jpg", caption="Portrait of Yang Shen（From Wikipedia）")
 
         st.markdown("These verses reflect the reverence for Jizong mushrooms in classical Chinese culture.")
 

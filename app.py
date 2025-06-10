@@ -44,7 +44,7 @@ else:
 
             st.markdown("""
             <div style='font-size:14px; color: #555; line-height: 1.6;'>
-                <strong>制作者：</strong> 杨晓萱、XXX、XXX<br>
+                <strong>制作者：</strong> 杨晓萱，刘元婷，刘依依，陈媛清，夏柔，黄蕊<br>
                 <strong>指导教师：</strong> 周晓宇
             </div>
             """, unsafe_allow_html=True)
@@ -59,7 +59,7 @@ else:
 
             st.markdown("""
             <div style='font-size:14px; color: #555; line-height: 1.6;'>
-                <strong>Created by:</strong> Yang Xiaoxuan, XXX, XXX<br>
+                <strong>Created by:</strong> Yang Xiaoxuan, Liu Yuanting, Liu Yiyi, Chen Yuanqing, Xia Rou, Huang Rui<br>
                 <strong>Instructor:</strong> Zhou Xiaoyu
             </div>
             """, unsafe_allow_html=True)
