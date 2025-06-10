@@ -1,12 +1,37 @@
 import streamlit as st
-import os
 
 def render(lang="中文"):
-    st.title("🎬 教学视频" if lang == "中文" else "🎬 Teaching Video")
+    st.title("🎥 教学视频" if lang == "中文" else "🎥 Teaching Video")
+    st.markdown("---")
 
     if lang == "中文":
-        st.markdown("请观看以下教学视频，了解课程核心内容：")
-        st.video("https://www.bilibili.com/video/BV13cTkzMEYS/?spm_id_from=333.1387.homepage.video_card.click&vd_source=698c8c973ffab4c7118a2b70fabace67")
+        st.subheader("📺 鸡枞菌课程全程视频（中文）")
+        bilibili_embed_code = """
+        <div style="text-align:center;">
+            <iframe src="https://player.bilibili.com/player.html?bvid=BV13cTkzMEYS&autoplay=0"
+                    scrolling="no"
+                    border="0"
+                    frameborder="no"
+                    framespacing="0"
+                    allowfullscreen="true"
+                    style="width: 50%; height: 315px;">
+            </iframe>
+        </div>
+        """
+        st.components.v1.html(bilibili_embed_code, height=350)
+
     else:
-        st.markdown("Watch the following teaching video to understand the course content:")
-        st.video("https://www.bilibili.com/video/BV1XzTkz3EuB/?spm_id_from=333.1387.upload.video_card.click&vd_source=698c8c973ffab4c7118a2b70fabace67")
+        st.subheader("📺 Jizong Teaching Video (English Version)")
+        bilibili_embed_code = """
+        <div style="text-align:center;">
+            <iframe src="https://player.bilibili.com/player.html?bvid=BV1XzTkz3EuB&autoplay=0"
+                    scrolling="no"
+                    border="0"
+                    frameborder="no"
+                    framespacing="0"
+                    allowfullscreen="true"
+                    style="width: 50%; height: 315px;">
+            </iframe>
+        </div>
+        """
+        st.components.v1.html(bilibili_embed_code, height=350)

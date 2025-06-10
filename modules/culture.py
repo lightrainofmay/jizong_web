@@ -7,12 +7,6 @@ def show_image_local(path, caption=None, width=300):
     else:
         st.warning(f"⚠️ 图像未找到: {path}")
 
-def show_video_local(path):
-    if os.path.exists(path):
-        st.video(path)
-    else:
-        st.warning(f"⚠️ 视频未找到: {path}")
-
 def render(lang="中文"):
     st.title("🎎 非遗文化与故事" if lang == "中文" else "🎎 Intangible Heritage & Stories")
     st.markdown("---")
@@ -34,7 +28,14 @@ def render(lang="中文"):
 > 仙翁住近华阳洞，分得琼英一两枝。  
 > ——杨升庵（杨慎）
         """)
-        st.video("https://www.bilibili.com/video/BV13cTkzMERP/?vd_source=698c8c973ffab4c7118a2b70fabace67")
+        st.components.v1.html("""
+        <div style="text-align:center;">
+            <iframe src="https://player.bilibili.com/player.html?bvid=BV13cTkzMERP&autoplay=0"
+                    frameborder="no" allowfullscreen="true"
+                    style="width: 50%; height: 315px;">
+            </iframe>
+        </div>
+        """, height=350)
 
         st.markdown("""
 > 至味常无种，轮菌雪作肤。  
@@ -43,7 +44,14 @@ def render(lang="中文"):
 > 秋风菁菜客，食品列兹无。  
 > ——清·贾杰《鸡枞》
         """)
-        st.video("https://www.bilibili.com/video/BV13cTkzME4D/?vd_source=698c8c973ffab4c7118a2b70fabace67")
+        st.components.v1.html("""
+        <div style="text-align:center;">
+            <iframe src="https://player.bilibili.com/player.html?bvid=BV13cTkzME4D&autoplay=0"
+                    frameborder="no" allowfullscreen="true"
+                    style="width: 50%; height: 315px;">
+            </iframe>
+        </div>
+        """, height=350)
 
         show_image_local("assets/images/yangshen.jpg", caption="杨慎画像（图片来自维基百科）")
 
@@ -65,7 +73,14 @@ Jizong is not only a culinary treasure but also a poetic symbol in Chinese liter
 > Shares a branch of celestial essence.*  
 > —Yang Shen, Ming Dynasty
         """)
-        st.video("https://www.bilibili.com/video/BV1hcTkzMEYX/?vd_source=698c8c973ffab4c7118a2b70fabace67")
+        st.components.v1.html("""
+        <div style="text-align:center;">
+            <iframe src="https://player.bilibili.com/player.html?bvid=BV1hcTkzMEYX&autoplay=0"
+                    frameborder="no" allowfullscreen="true"
+                    style="width: 50%; height: 315px;">
+            </iframe>
+        </div>
+        """, height=350)
 
         st.markdown("""
 > *No need to sow this rarest taste,  
@@ -74,7 +89,14 @@ Jizong is not only a culinary treasure but also a poetic symbol in Chinese liter
 > And feeds the honored guest in fall.*  
 > —Jia Jie, Qing Dynasty
         """)
-        st.video("https://www.bilibili.com/video/BV13cTkzME1p/?vd_source=698c8c973ffab4c7118a2b70fabace67")
+        st.components.v1.html("""
+        <div style="text-align:center;">
+            <iframe src="https://player.bilibili.com/player.html?bvid=BV13cTkzME1p&autoplay=0"
+                    frameborder="no" allowfullscreen="true"
+                    style="width: 50%; height: 315px;">
+            </iframe>
+        </div>
+        """, height=350)
 
         show_image_local("assets/images/yangshen.jpg", caption="Portrait of Yang Shen（From Wikipedia）")
 
