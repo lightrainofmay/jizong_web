@@ -29,7 +29,7 @@ def render(lang="中文"):
 > ——杨升庵（杨慎）
         """)
         st.components.v1.html("""
-        <div style="text-align:center;">
+        <div style="text-align:left;">
             <iframe src="https://player.bilibili.com/player.html?bvid=BV13cTkzMERP&autoplay=0"
                     frameborder="no" allowfullscreen="true"
                     style="width: 50%; height: 315px;">
@@ -45,7 +45,7 @@ def render(lang="中文"):
 > ——清·贾杰《鸡枞》
         """)
         st.components.v1.html("""
-        <div style="text-align:center;">
+        <div style="text-align:left;">
             <iframe src="https://player.bilibili.com/player.html?bvid=BV13cTkzME4D&autoplay=0"
                     frameborder="no" allowfullscreen="true"
                     style="width: 50%; height: 315px;">
@@ -74,7 +74,7 @@ Jizong is not only a culinary treasure but also a poetic symbol in Chinese liter
 > —Yang Shen, Ming Dynasty
         """)
         st.components.v1.html("""
-        <div style="text-align:center;">
+        <div style="text-align:left;">
             <iframe src="https://player.bilibili.com/player.html?bvid=BV1hcTkzMEYX&autoplay=0"
                     frameborder="no" allowfullscreen="true"
                     style="width: 50%; height: 315px;">
@@ -90,7 +90,7 @@ Jizong is not only a culinary treasure but also a poetic symbol in Chinese liter
 > —Jia Jie, Qing Dynasty
         """)
         st.components.v1.html("""
-        <div style="text-align:center;">
+        <div style="text-align:left;">
             <iframe src="https://player.bilibili.com/player.html?bvid=BV13cTkzME1p&autoplay=0"
                     frameborder="no" allowfullscreen="true"
                     style="width: 50%; height: 315px;">

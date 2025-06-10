@@ -9,6 +9,5 @@ MENU = {
     "食谱 Recipes": "cooking",
     "故事 Stories": "culture",
     "保护 Ecology": "ecology",
-    "社区互动 Community": "community",
-    "教学视频 Video": "video"
+    "社区互动 Community": "community"
 }

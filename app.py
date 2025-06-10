@@ -1,6 +1,6 @@
 import streamlit as st
 from config import LANGUAGES, MENU
-from modules import identify, cooking, culture, ecology, community, mushroom_info, video  # ✅ 新增模块
+from modules import identify, cooking, culture, ecology, community, mushroom_info 
 
 st.set_page_config(page_title="鸡枞菌互动网页", layout="wide")
 
@@ -29,8 +29,6 @@ elif selected_page == "community":
     community.render(lang)
 elif selected_page == "mushroom_info":  # ✅ 新增导航逻辑
     mushroom_info.render(lang)
-elif selected_page == "video":  # ✅ 新增导航逻辑
-    video.render(lang)
 else:
     col1, col2 = st.columns([3, 1])
 
